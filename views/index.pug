@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Sleeping Giant Supplies
+
+  p - Adventurer Outfitters.
+
+  h2 Ahhh customers! How may I help you?
+
+  if error
+    p Error getting dynamic content.
+  else
+    ul(class='list-items')
+      li 
+        a(href='/inventory/items') #[strong Items]
+      li 
+        a(href='/inventory/categories') #[strong Categories]

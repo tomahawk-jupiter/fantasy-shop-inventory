@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+  h1=title
+
+  p=message
+
+  ul(class='list-items') 
+    each item in items 
+      li 
+        a(href=item.url) #{item.name}
+    
+    else 
+      li There are no items left.

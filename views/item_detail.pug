@@ -1,0 +1,20 @@
+extends layout 
+
+block content 
+
+  h1=item.name 
+
+  p(class='item-description') #{item.description} 
+
+  img(class='item-img')
+
+  p(class='item-price') #{item.price} Silver Stag/s 
+
+  p(class='item-stock') #{item.stock} In Stock
+
+  hr
+
+  p 
+    a(href=item.url + '/update') Update Item 
+  p 
+    a(href=item.url + '/delete') Delete Item

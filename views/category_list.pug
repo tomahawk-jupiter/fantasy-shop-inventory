@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+  h1=title
+
+  p=message
+
+  ul(class='list-items')
+    each category in categories 
+      li 
+        a(href=category.url) #{category.name}
+    
+    else 
+      dt There are no items.
